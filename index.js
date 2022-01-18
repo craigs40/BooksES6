@@ -39,6 +39,10 @@ list.addEventListener('click', () => {
   listSection.classList.remove('hidden');
 });
 
+const populateFields = () => {
+  localStorage.setItem('savedBooks', JSON.stringify(books));
+};
+
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -87,10 +91,6 @@ form.addEventListener('submit', (e) => {
   Book.addBook(new Book(inputBook.title, inputBook.author));
   form.submit();
 });
-
-const populateFields = () => {
-  localStorage.setItem('savedBooks', JSON.stringify(books));
-};
 
 if (localStorage.savedBooks) {
   books = JSON.parse(localStorage.getItem('savedBooks'));
