@@ -6,6 +6,9 @@
 
 - HTML, CSS and JavaScript
 
+## Live Link
+[Live Demo Link](https://craigs40.github.io/BooksES6/)
+
 ### Setup
 
 - Use the green "Code" button at the top of the repo to clone this project using one of the three options:
