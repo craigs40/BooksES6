@@ -9,9 +9,9 @@
 ### Setup
 
 - Use the green "Code" button at the top of the repo to clone this project using one of the three options:
-   1. Open a terminal or a git bash in the desired directory and run `https://github.com/craigs40/BooksES6.git`
-   2. Open with Github Desktop
-   3. Download the ZIP file
+   - Open a terminal or a git bash in the desired directory and run `https://github.com/craigs40/BooksES6.git`
+   - Open with Github Desktop
+   - Download the ZIP file
 
 ## Authors
 
