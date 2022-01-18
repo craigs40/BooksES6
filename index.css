@@ -2,30 +2,14 @@
 
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-*::after,
-*::before {
-  box-sizing: inherit;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   font-family: "Comic Neue", cursive;
   font-size: 14px;
   line-height: 1.5;
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
-}
-
-header {
-  width: 90%;
 }
 
 main {
@@ -39,11 +23,8 @@ h2 {
 }
 
 button {
-  display: flex;
-  font-weight: bold;
   letter-spacing: 1px;
   padding: 0.4rem;
-  border-radius: 6px;
   margin-left: auto;
   border: 0.125rem #333 solid;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
@@ -51,11 +32,9 @@ button {
 
 input {
   padding: 0.3rem;
-  margin-bottom: 10px;
   width: 100%;
-  border: 2px #333 solid;
-  border-radius: 6px;
   outline: none;
+  margin-bottom: 10px;
 }
 
 input:focus,
@@ -64,10 +43,6 @@ input:active {
 }
 
 .listSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin-block: 20px;
   height: 100%;
 }
@@ -78,58 +53,41 @@ tr:nth-child(even) {
 
 .all-books {
   width: 80%;
-  border: 2px #333 solid;
-  border-radius: 6px;
 }
 
 .book-container {
-  display: flex;
-  justify-content: space-between;
   padding: 0.5rem;
 }
 
 .form {
   max-width: 40%;
-  box-sizing: border-box;
-  margin: 0 auto;
 }
 
 .topnav {
-  display: flex;
-  align-items: center;
   flex-direction: row;
-  justify-content: space-between;
   margin: 16px auto 0 auto;
   border: solid 2px black;
-  border-radius: 6px;
   padding: 1px;
 }
 
 div#date {
   padding: 10px;
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
   justify-content: flex-end;
 }
 
 .menu {
-  font-weight: bold;
   font-size: 1.2rem;
   width: 20%;
-  display: flex;
   flex: 0.5;
   flex-wrap: nowrap;
   justify-content: space-evenly;
-  align-items: center;
   padding: 0.5rem;
   list-style-type: none;
   margin: 0;
-  cursor: pointer;
 }
 
 hr {
-  border: 0.1rem solid #333;
+  border: 1px solid #333;
   height: 20px;
   margin: 0 5px;
 }
@@ -142,35 +100,94 @@ hr {
 }
 
 .contactSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin-top: 10px;
-  font-weight: bold;
 }
 
 .footer {
-  width: 90%;
   border: solid 2px black;
   border-radius: 5px;
-  margin: 0 auto;
   padding: 2px 0 2px 6px;
-  font-weight: bold;
   font-size: 1.2rem;
-  display: flex;
   align-self: flex-end;
-  margin-bottom: 10px;
 }
 
-.listSection.hidden {
-  display: none;
+footer.footer {
+  margin-bottom: 16px;
 }
 
-.form.hidden {
-  display: none;
-}
-
+.listSection.hidden,
+.form.hidden,
 .contactSection.hidden {
   display: none;
+}
+
+body,
+button,
+.listSection,
+.book-container,
+.topnav,
+div#date,
+.menu,
+.contactSection,
+.footer {
+  display: flex;
+}
+
+body,
+.listSection,
+.contactSection {
+  flex-direction: column;
+}
+
+body,
+.book-container,
+.topnav {
+  justify-content: space-between;
+}
+
+body,
+.listSection,
+.topnav,
+.menu,
+.contactSection {
+  align-items: center;
+}
+
+header,
+.footer {
+  width: 90%;
+}
+
+button,
+.menu,
+.contactSection,
+.footer {
+  font-weight: bold;
+}
+
+input,
+.all-books {
+  border: 2px #333 solid;
+}
+
+button,
+input,
+.all-books,
+.topnav {
+  border-radius: 6px;
+}
+
+.listSection,
+.contactSection {
+  justify-content: center;
+}
+
+.form,
+.footer {
+  margin: 0 auto;
+}
+
+button,
+.menu {
+  cursor: pointer;
 }
