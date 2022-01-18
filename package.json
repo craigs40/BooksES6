@@ -1,0 +1,30 @@
+{
+  "name": "BooksES6",
+  "version": "1.0.0",
+  "description": "Use ES6 modules to write modular JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craigs40/BooksES6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/craigs40/BooksES6/issues"
+  },
+  "homepage": "https://github.com/craigs40/BooksES6#readme",
+  "dependencies": {
+    "luxon": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.4",
+    "hint": "^6.1.9"
+  }
+}

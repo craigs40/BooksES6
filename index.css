@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Comic Neue", cursive;
+  font-size: 14px;
+  line-height: 1.5;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  width: 60%;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  letter-spacing: 1px;
+  padding: 0.4rem;
+  margin-left: auto;
+  border: 0.125rem #333 solid;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+input {
+  padding: 0.3rem;
+  width: 100%;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.listSection {
+  margin-block: 20px;
+  height: 100%;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+.all-books {
+  width: 80%;
+}
+
+.book-container {
+  padding: 0.5rem;
+}
+
+.form {
+  max-width: 40%;
+}
+
+.topnav {
+  flex-direction: row;
+  margin: 16px auto 0 auto;
+  border: solid 2px black;
+  padding: 1px;
+}
+
+div#date {
+  padding: 10px;
+  justify-content: flex-end;
+}
+
+.menu {
+  font-size: 1.2rem;
+  width: 20%;
+  flex: 0.5;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  list-style-type: none;
+  margin: 0;
+}
+
+hr {
+  border: 1px solid #333;
+  height: 20px;
+  margin: 0 5px;
+}
+
+.logo {
+  margin-left: 16px;
+  text-decoration: none;
+  color: black;
+  margin-block: 0.2em;
+}
+
+.contactSection {
+  margin-top: 10px;
+}
+
+.footer {
+  border: solid 2px black;
+  border-radius: 5px;
+  padding: 2px 0 2px 6px;
+  font-size: 1.2rem;
+  align-self: flex-end;
+}
+
+footer.footer {
+  margin-bottom: 16px;
+}
+
+.listSection.hidden,
+.form.hidden,
+.contactSection.hidden {
+  display: none;
+}
+
+body,
+button,
+.listSection,
+.book-container,
+.topnav,
+div#date,
+.menu,
+.contactSection,
+.footer {
+  display: flex;
+}
+
+body,
+.listSection,
+.contactSection {
+  flex-direction: column;
+}
+
+body,
+.book-container,
+.topnav {
+  justify-content: space-between;
+}
+
+body,
+.listSection,
+.topnav,
+.menu,
+.contactSection {
+  align-items: center;
+}
+
+header,
+.footer {
+  width: 90%;
+}
+
+button,
+.menu,
+.contactSection,
+.footer {
+  font-weight: bold;
+}
+
+input,
+.all-books {
+  border: 2px #333 solid;
+}
+
+button,
+input,
+.all-books,
+.topnav {
+  border-radius: 6px;
+}
+
+.listSection,
+.contactSection {
+  justify-content: center;
+}
+
+.form,
+.footer {
+  margin: 0 auto;
+}
+
+button,
+.menu {
+  cursor: pointer;
+}
+
+input:focus,
+input:active {
+  border: 3px #333 solid;
+}
