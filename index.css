@@ -37,11 +37,6 @@ input {
   margin-bottom: 10px;
 }
 
-input:focus,
-input:active {
-  border: 3px #333 solid;
-}
-
 .listSection {
   margin-block: 20px;
   height: 100%;
@@ -190,4 +185,9 @@ input,
 button,
 .menu {
   cursor: pointer;
+}
+
+input:focus,
+input:active {
+  border: 3px #333 solid;
 }
